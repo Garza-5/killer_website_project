@@ -12,16 +12,18 @@ Orange Color #e67e22
     box-sizing: border-box;
 }
 
-html {
+html,
+body {
     background-color: #fff;
     color: #555;
     font-family: 'Lato', 'Arial', sans-serif;
     font-weight: 300;
     font-size: 20px;
     text-rendering: optimizeLegibility;
+    overflow-x: hidden;
 }
 
-.clearfix {zoom: 1}
+.clearfix {zoom: 1;}
 .clearfix:after {
     content: '.';
     clear: both;
@@ -38,7 +40,7 @@ html {
     margin: 0 auto;
 }
 
-section{
+section {
     padding: 80px 0;
 }
 
@@ -57,7 +59,7 @@ h3 {
     text-transform: uppercase;
 }
 
-h1{
+h1 {
     margin-top: 0;
     margin-bottom: 20px;
     color: #fff;
@@ -75,7 +77,7 @@ h2 {
 }
 
 h3 {
-    font-size 110%;
+    font-size: 110%;
     margin-bottom: 15px;
 }
 
@@ -92,7 +94,7 @@ h2:after {
 
 /* ----- PARAGRAPHS ----- */
 
-.long-copy{
+.long-copy {
     line-height: 145%;
     width: 70%;
     margin-left: 15%;
@@ -152,7 +154,7 @@ a:active {
 
 .btn:link,
 .btn:visited,
-input[type=submit]{
+input[type=submit] {
     display: inline-block;
     padding: 10px 30px;
     font-weight: 300;
@@ -179,7 +181,7 @@ input[type=submit]{
 .btn:hover,
 .btn:active,
 input[type=submit]:hover,
-input[type=submit]:active{
+input[type=submit]:active {
     background-color: #cf6d17;
 }
 
@@ -208,9 +210,9 @@ header {
 
 .hero-text-box {
     position: absolute;
-    width: 1140:px;
+    width: 1140px;
     top: 50%;
-    left:50%;
+    left: 50%;
     transform: translate(-50%, -50%);
 }
 
@@ -307,6 +309,8 @@ header {
     background-color: #f4f4f4;
 }
 
+.step-box { margin-top: 90px; }
+
 .steps-box:first-child {
     text-align: right;
     padding-right: 3%;
@@ -315,7 +319,7 @@ header {
 
 .steps-box:last-child {
     padding-left: 3%;
-    margin-top: 70px
+    margin-top: 70px;
 }
 
 .app-screen {
@@ -514,6 +518,7 @@ input[type=checkbox] {
 footer {
     background-color: #333;
     padding: 50px;
+    font-size: 80%;
 }
 
 .footer-nav {
@@ -521,10 +526,11 @@ footer {
     float: left;
 }
 
-.social links {
+.social-links {
     list-style: none;
+    float: right;
+    
 }
-
 
 .footer-nav li,
 .social-links li {
@@ -552,9 +558,36 @@ footer {
     color: #ddd;
 }
 
+.social-links li a:link,
+.social-links li a:visited {
+    font-size: 160%;
+}
+
+.ion-social-facebook,
+.ion-social-twitter,
+.ion-social-googleplus,
+.ion-social-instagram {
+    transition: color 0.2s;
+}
+
+.ion-social-facebook:hover {
+    color: #3b5998
+}
+
+.ion-social-twitter:hover {
+    color: #00b6f1
+}
+
+.ion-social-googleplus:hover {
+    color: #df4a32
+}
+
+.ion-social-instagram:hover {
+    color: #c32aa3
+}
+
 footer p {
     color: #888;
     text-align: center;
-    font-size: 90%;
-    margin-top: 30px;
+    margin-top: 20px;
 }
